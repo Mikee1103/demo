@@ -1,27 +1,30 @@
 package com.example.demo;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 
     public class HelloController {
-
+        private Squadra sq= new Squadra();
 
         @FXML
         private TextField nomeGiocatoreField;
         @FXML
         private TextField goalField;
         @FXML
-        private TextField capitanoField;
+        private CheckBox capitano;
         @FXML
         private Label infoLabel;
 
         @FXML
         protected void aggiungiGiocatore() {
+            Giocatori g=new Giocatori(Integer.parseInt(goalField.getText()),nomeGiocatoreField.getText());
+            sq.aggiungi(g);
 
         }
-
+/*
         @FXML
         protected void visualizzaGiocatori() {
 
@@ -57,5 +60,5 @@ import javafx.scene.control.Button;
         protected void esci() {
 
             System.exit(0);
-        }
+        }*/
     }

@@ -1,3 +1,5 @@
+package com.example.demo;
+
 public class Giocatori {
     private int goal;
     private String nome;
