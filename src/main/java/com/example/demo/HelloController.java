@@ -3,10 +3,10 @@ package com.example.demo;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
 
-    public class HelloController {
+public class HelloController {
         private Squadra sq= new Squadra();
 
         @FXML
@@ -16,7 +16,7 @@ import javafx.scene.control.Button;
         @FXML
         private CheckBox capitano;
         @FXML
-        private Label infoLabel;
+        private TextArea infoLabel;
 
         @FXML
         protected void aggiungiGiocatore() {
@@ -24,12 +24,12 @@ import javafx.scene.control.Button;
             sq.aggiungi(g);
 
         }
-/*
+
         @FXML
         protected void visualizzaGiocatori() {
-
+            infoLabel.setText(String.valueOf(sq));
         }
-
+/*
         @FXML
         protected void modificaDati() {
 

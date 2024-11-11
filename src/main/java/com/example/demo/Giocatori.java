@@ -45,6 +45,10 @@ public class Giocatori {
         nome=null;
         this.capitano=capitano;
     }
+    @Override
+    public String toString(){
+        return getNome()+"; "+getGoal()+"; "+"capitano: "+getCapitano();
+    }
     public int getGoal(){
         return goal;
     }
